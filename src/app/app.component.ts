@@ -25,6 +25,7 @@ export class AppComponent implements OnInit {
   readonly #iconSetService = inject(IconSetService);
 
   constructor() {
+    
     this.#titleService.setTitle(this.title);
     // iconSet singleton
     this.#iconSetService.icons = { ...iconSubset };
